@@ -3,24 +3,15 @@
 <!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
 <main class="wp-block-group">
 
-	<!-- wp:query {"query":{"perPage":10,"postType":"post","order":"desc","orderBy":"date"},"layout":{"type":"constrained"}} -->
+	<!-- wp:query-title {"type":"archive"} /-->
+
+	<!-- wp:query {"query":{"perPage":12,"inherit":true},"layout":{"type":"constrained"}} -->
 	<div class="wp-block-query">
 
 		<!-- wp:post-template -->
 			<!-- wp:post-title {"isLink":true} /-->
-
 			<!-- wp:post-featured-image {"isLink":true} /-->
-
 			<!-- wp:post-excerpt /-->
-
-			<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
-			<div class="wp-block-group">
-				<!-- wp:post-date /-->
-				<!-- wp:post-author {"showAvatar":false} /-->
-				<!-- wp:post-terms {"term":"category"} /-->
-			</div>
-			<!-- /wp:group -->
-
 		<!-- /wp:post-template -->
 
 		<!-- wp:query-pagination -->
